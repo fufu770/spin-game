@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자일로큐브 행운을 주세요!</title>
+    <!-- 넥슨고딕체 폰트 추가 -->
+    <link href="https://webfontworld.github.io/NexonGothic/NexonGothic.css" rel="stylesheet">
+    <!-- 폭죽 효과를 위한 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- 스타일시트 연결 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 게임 컨테이너 -->
+    <div class="container">
+        <!-- 게임 제목 -->
+        <h1 class="title">자일로큐브 행운을 주세요!</h1>
+        
+        <!-- 결과 표시 영역 -->
+        <div id="result" class="result"></div>
+        
+        <!-- 원판 컨테이너 -->
+        <div class="wheel-container">
+            <!-- SVG 원형 룰렛 -->
+            <svg id="wheel" class="wheel-svg" width="400" height="400" viewBox="0 0 400 400"></svg>
+            <!-- 원판 포인터 -->
+            <div class="pointer"></div>
+        </div>
+        
+        <!-- 시작 버튼 -->
+        <button id="spinBtn" class="spin-btn">시작</button>
+    </div>
+
+    <!-- 자바스크립트 연결 -->
+    <script src="script.js"></script>
+</body>
+</html> 
